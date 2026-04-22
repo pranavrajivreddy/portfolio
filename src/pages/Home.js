@@ -1,10 +1,11 @@
 import React from "react";
+import profilePic from "../images/profile.jpg";
 
 export default function Home() {
   return (
     <div style={styles.container}>
       <img
-        src="https://via.placeholder.com/150"
+        src={profilePic}
         alt="profile"
         style={styles.image}
       />
