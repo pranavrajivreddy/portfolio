@@ -4,14 +4,17 @@ const projects = [
   {
     title: "Dog Vocalization Classifier",
     desc: "Classifies dog sounds using ML models",
+    link: "https://github.com/pranavrajivreddy/dog-project"
   },
   {
     title: "NASA CMAPS Prediction",
     desc: "Predicts Remaining Useful Life using ML",
+    link: "https://github.com/pranavrajivreddy/nasa-project"
   },
   {
     title: "Diabetes Detection via Voice",
     desc: "Detects diabetes using voice biomarkers",
+    link: "https://github.com/pranavrajivreddy/diabetes-project"
   }
 ];
 
@@ -19,12 +22,20 @@ export default function Projects() {
   return (
     <div style={styles.container}>
       <h1>Projects</h1>
+
       <div style={styles.grid}>
         {projects.map((p, index) => (
           <div key={index} style={styles.card}>
             <h2>{p.title}</h2>
             <p>{p.desc}</p>
-            <button style={styles.button}>GitHub</button>
+
+            <button
+              style={styles.button}
+              onClick={() => window.open(p.link, "_blank")}
+            >
+              View Project
+            </button>
+
           </div>
         ))}
       </div>
@@ -34,7 +45,8 @@ export default function Projects() {
 
 const styles = {
   container: {
-    padding: "40px"
+    padding: "40px",
+    textAlign: "center"
   },
   grid: {
     display: "flex",
@@ -46,7 +58,6 @@ const styles = {
     border: "1px solid #ccc",
     borderRadius: "10px",
     width: "250px",
-    textAlign: "center",
     boxShadow: "0 4px 10px rgba(0,0,0,0.1)"
   },
   button: {
