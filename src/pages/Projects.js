@@ -4,7 +4,7 @@ const projects = [
   {
     title: "Dog Vocalization Classifier",
     desc: "Classifies dog sounds using ML models",
-    link: "https://github.com/pranavrajivreddy/dog-project"
+    link: "https://github.com/JyotsnaPandranki/NLP-Project"
   },
   {
     title: "NASA CMAPS Prediction",
