@@ -12,9 +12,9 @@ const projects = [
     link: "https://github.com/pranavrajivreddy/nasa-project"
   },
   {
-    title: "Diabetes Detection via Voice",
-    desc: "Detects diabetes using voice biomarkers",
-    link: "https://github.com/pranavrajivreddy/diabetes-project"
+    title: "Banquet Hall Booking Sysytem",
+    desc: "A complete system to manage banquet hall bookings",
+    link: "https://github.com/pranavrajivreddy/HotelSindhuraBanquetHallBooking"
   }
 ];
 
